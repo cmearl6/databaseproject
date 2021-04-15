@@ -38,9 +38,13 @@ function saveDownload(id)
 		<input type="submit" value="Favorites">
 </form>
 <form action="dm.php">
-<input type="submit" value="DMs">
+	<input type="submit" value="DMs">
+</form>
 <form action="relation.php">
 		<input type="submit" value="Contacts">
+</form>
+<form action="category.php">
+		<input type="submit" value="Categories">
 </form>
 <form action="logout.php">
 		<input type="submit" value="Logout">
@@ -91,7 +95,7 @@ function saveDownload(id)
             	<a href="media.php?id=<?php echo $result_row[0];?>" target="_blank"><?php echo $result_row[1];?></a> 
             </td>
             <td>
-            	<a href="<?php echo $result_row[2].$result_row[1];?>" target="_blank" onclick="javascript:saveDownload(<?php echo $result_row[0];?>);">Download</a>
+            	<a href="<?php echo $result_row[2].$result_row[1];?>" target="_blank" onclick="javascript:saveDownload(<?php echo $result_row[0];?>);" download>Download</a>
             </td>
 		</tr>
         <?php

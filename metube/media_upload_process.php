@@ -13,10 +13,10 @@ $username=$_SESSION['username'];
 
 //Create Directory if doesn't exist
 if(!file_exists('uploads/'))
-	mkdir('uploads/', 0744);
+	mkdir('uploads/', 0755);
 $dirfile = 'uploads/'.$username.'/';
 if(!file_exists($dirfile))
-	mkdir($dirfile, 0744);
+	mkdir($dirfile, 0755);
 
 
 	if($_FILES["file"]["error"] > 0 )
@@ -78,6 +78,13 @@ if(!file_exists($dirfile))
 						
 							$addkey="INSERT INTO keywords (id, videoid, keyword) VALUES (NULL,'$mediaid','$word')";
 							$queryresult = mysqli_query($db->db_connect_id,$addkey)
+							or die("Insert into keyword error in media_upload_process.php " .mysqli_error($db->db_connect_id));
+						}
+						if (isset($_POST["category"])) {
+							$radioVal = $_POST["category"];
+
+							$addradval="INSERT INTO keywords (id, videoid, keyword) VALUES (NULL,'$mediaid','$radioVal')";
+							$addradvalresult=mysqli_query($db->db_connect_id,$addradval)
 							or die("Insert into keyword error in media_upload_process.php " .mysqli_error($db->db_connect_id));
 						}
 					}

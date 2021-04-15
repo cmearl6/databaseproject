@@ -90,7 +90,7 @@ if(isset($_GET['id'])) {
 		}
 
 		else{
-			echo "Media type unspported, please try downloading instead<br>";
+			echo "Media type unsupported, please try downloading instead<br>";
 		}
 ?>
 <?php

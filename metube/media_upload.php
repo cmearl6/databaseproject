@@ -32,10 +32,15 @@ session_start();
 			<td  width="20%">Keywords:<br /></td>
 			<td width="80%"><textarea  id="keywords" name="keywords" rows="2" cols="50">Separate the keywords by spaces</textarea><br /></td>
 		</tr>
-      
-			
-		</tr>
+
 	</table>
+
+	<input type="radio" name="category" value="Music">
+	<label for="music">Music</label><br>
+	<input type="radio" name="category" value="Entertainment">
+	<label for="entertainment">Entertainment</label><br>
+	<input type="radio" name="category" value="Gaming">
+	<label for="gaming">Gaming</label>
       
  </form>
 

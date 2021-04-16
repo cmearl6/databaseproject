@@ -52,6 +52,16 @@ if(isset($_POST['submit'])) {
   if(isset($login_error))
    {  echo "<div id='passwd_result'>".$login_error."</div>";}
 ?>
+
+<!-- Search Area: relocate as needed -->
+
+<form action="search.php" method="POST">
+		<input type="text" name="search" placeholder="Search MeTube">
+		<button type="submit" name="submit_search">Search</button>
+	</form>
+
+<!-- End Search Area-->
+
 <?php
 
 

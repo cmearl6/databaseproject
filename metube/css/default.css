@@ -13,3 +13,36 @@
 	font-weight:bold;
 	margin-right:60%;
 }
+
+/* vv- Added by Wes; modify values as desired -vv */
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-container {
+    width: 960px;
+    background-color: #ffffff;
+    padding: 60px;
+}
+
+.search-box {
+    padding-bottom: 36px;
+    width: 100%;
+}
+
+input {
+    padding: 0px 24px;
+    width: 360px;
+    height: 36px;
+    font-size: 24px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    font-size: 24px;
+}
+
+/* ^^- Added by Wes; modify values as desired -^^ */

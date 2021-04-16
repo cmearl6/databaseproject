@@ -31,7 +31,7 @@
 		?>
         <tr valign="top">			
 			<td>
-				<a href="http://webapp.computing.clemson.edu/~cmearl/databaseproject/metube/channel_content.php?channel=<?php echo $currentchannel;?>" target="_blank"><?php echo $currentchannel ?></a>
+				<a href="http://webapp.computing.clemson.edu/~cmearl/databaseproject/metube/channel_content.php?channel=<?php echo $result_row[0];?>" target="_blank"><?php echo $result_row[0] ?></a>
 			</td>
 		</tr>
         <?php

@@ -24,7 +24,14 @@ function saveDownload(id)
 </head>
 
 <body>
-<p>Welcome <?php echo $_SESSION['username'];?></p>
+<?php if (isset($_SESSION['username'])) { ?>
+	<p>Welcome <?php echo $_SESSION['username'];?></p>
+<?php } else {
+	header("location:index.php");
+	die;
+}
+?>
+
 <form action="profile.php">
 		<input type="submit" value="Profile">
 </form>
